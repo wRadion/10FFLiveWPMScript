@@ -9,7 +9,7 @@
 All of these values are updated whenever you go to the next word (pressing space).
 
 - The "_Speed_" value is your current speed (in WPM = Words Per Minute)
-- The "_Keystrokes_" values are the number of keystrokes you hit. In green, the correct keystrokes and in red, the wrong keystrokes.
+- The "_Keystrokes_" values are the number of keystrokes you hit. In green, the correct keystrokes and in red, the wrong keystrokes. On 10FF, when you typed a word wrong, all the keystrokes are considered wrong (even if you did just one mistake).
 - The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can not be less than the score.
 
 ## Languages support
