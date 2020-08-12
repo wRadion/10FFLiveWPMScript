@@ -20,7 +20,9 @@ On other languages, the values displayed might not be accurate.
 
 ## Misc informations
 
-It supports Stylish themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
+It supports [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
+
+Here are some examples:
 
 ![Styles Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview_styles.png)
 
