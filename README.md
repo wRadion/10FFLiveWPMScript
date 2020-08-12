@@ -4,7 +4,25 @@
 
 ![Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview.png)
 
-## Install
+## What are those numbers?
+
+All of these values are updated whenever you go to the next word (pressing space).
+
+- The "_Speed_" value is your current speed (in WPM = Words Per Minute)
+- The "_Keystrokes_" values are the number of keystrokes you hit. In green, the correct keystrokes and in red, the wrong keystrokes.
+- The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can not be less than the score.
+
+## Languages support
+
+Currently, it only supports **English** and **French** normal+advanced tests, custom tests and competitions.
+
+On other languages, the values displayed might not be accurate.
+
+## Misc informations
+
+It supports Stylish themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
+
+## How to Install
 
 1. Download the (https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)[tampermonkey] extension or a equivalent.
 
