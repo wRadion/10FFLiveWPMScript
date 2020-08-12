@@ -29,7 +29,7 @@ Here are some examples:
 
 ## How to Install
 
-1. Download the [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) extension or a equivalent.
+1. Download the [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) Chrome extension or an equivalent.
 
 2. Click on the extension, then **Create New Script**.
 
