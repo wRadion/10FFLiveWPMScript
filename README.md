@@ -22,6 +22,9 @@ On other languages, the values displayed might not be accurate.
 
 It supports Stylish themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
 
+![Styles Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview_styles.png)
+
+
 ## How to Install
 
 1. Download the [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) extension or a equivalent.
