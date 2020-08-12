@@ -35,7 +35,7 @@ Here are some examples:
 
 ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/1.png)
 
-3. Copy the content of the [script.js](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/script.js) file, and save it.
+3. Copy & paste the content of the [script.js](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/script.js) file, and save it.
 
 4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon.
 
