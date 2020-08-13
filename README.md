@@ -1,11 +1,12 @@
 # 10FF Live WPM Script
 
-1. [Preview](https://github.com/wRadion/10ff_LiveWPMScript#preview)
-2. [What are those numbers?](https://github.com/wRadion/10ff_LiveWPMScript#what-are-those-numbers)
-3. [Languages support](https://github.com/wRadion/10ff_LiveWPMScript#languages-support)
-4. [Misc informations](https://github.com/wRadion/10ff_LiveWPMScript#misc-informations)
-5. [How to Install](https://github.com/wRadion/10ff_LiveWPMScript#how-to-install)
-6. [Bug reports, suggestions, contact](https://github.com/wRadion/10ff_LiveWPMScript#bug-reports-suggestions-contact)
+1. [Preview](#preview)
+2. [What are those numbers?](#what-are-those-numbers)
+3. [Supported languages](#supported-languages)
+4. [Custom Stylish theme](#custom-stylish-theme)
+5. [How to Install](#how-to-install)
+6. [Customization](#customization)
+7. [Bug reports, suggestions, contact](#bug-reports-suggestions-contact)
 
 ## Preview
 
@@ -19,7 +20,7 @@ All of these values are updated whenever you go to the next word (pressing space
 - The "_Keystrokes_" values are the number of keystrokes you hit. In green, the correct keystrokes and in red, the wrong keystrokes. On 10FF, when you typed a word wrong, all the keystrokes are considered wrong (even if you did just one mistake).
 - The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can not be less than the score.
 
-## Languages supported
+## Supported languages
 
 Here are the languages supported by the script:
 - ![UK-US](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/uk-us.png) English
@@ -33,7 +34,7 @@ On other languages, the values displayed might not be accurate.
 
 If you wish me to add keystrokes rules for your languages, feel free to create an issue or contact me on Discord.
 
-## Misc informations
+## Custom Stylish theme
 
 It supports [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
 
@@ -55,6 +56,16 @@ Here are some examples:
 4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon.
 
 ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/2.png)
+
+## Customization
+
+You can change the alignment of the values by editing the `alignment` variable to `left`, `center` or `right`:
+
+![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_align.png)
+
+You can change the visibility of the values by editing the `*Visibility` variables to `visible` or `hidden`:
+
+![CustomVisbility](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
 
 ## Bug reports, suggestions, contact
 
