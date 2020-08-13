@@ -22,12 +22,12 @@ All of these values are updated whenever you go to the next word (pressing space
 ## Languages supported
 
 Here are the languages supported by the script:
-- English
-- Filipino
-- French
-- Indonesian
-- Malagasy
-- Malaysian
+- ![UK-US](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/uk-us.png) English
+- ![PH](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/ph.png) Filipino
+- ![FR](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/fr.png) French
+- ![ID](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/id.png) Indonesian
+- ![MG](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/mg.png) Malagasy
+- ![MY](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/my.png) Malaysian
 
 On other languages, the values displayed might not be accurate.
 
