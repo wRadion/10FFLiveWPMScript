@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM EN/FR
 // @namespace    https://www.wradion.dev
-// @version      2.4
+// @version      2.5
 // @description  Live WPM for 10FF English/French tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -119,7 +119,7 @@ const smallStyle =
       else {
         --index;
         const wrongWords = $(".wrong[wordnr]");
-        keystrokesWrong += wrongWords[wrongWords.length - 1].innerText.length + 1;
+        keystrokesWrong += getKeystrokes(wrongWords[wrongWords.length - 1].innerText) + 1;
       }
 
       const tmp = keystrokesCorrect / 5;
