@@ -1,12 +1,12 @@
 # 10FF Live WPM Script
 
-1. [Preview](https://github.com/wRadion/10ff_LiveWPMScript#preview)
-2. [What are those numbers?](https://github.com/wRadion/10ff_LiveWPMScript#what-are-those-numbers)
-3. [Languages support](https://github.com/wRadion/10ff_LiveWPMScript#languages-support)
-4. [Misc informations](https://github.com/wRadion/10ff_LiveWPMScript#misc-informations)
-5. [How to Install](https://github.com/wRadion/10ff_LiveWPMScript#how-to-install)
-6. [Customization](https://github.com/wRadion/10ff_LiveWPMScript#customization)
-7. [Bug reports, suggestions, contact](https://github.com/wRadion/10ff_LiveWPMScript#bug-reports-suggestions-contact)
+1. [Preview](#preview)
+2. [What are those numbers?](#what-are-those-numbers)
+3. [Languages support](#languages-support)
+4. [Misc informations](#misc-informations)
+5. [How to Install](#how-to-install)
+6. [Customization](#customization)
+7. [Bug reports, suggestions, contact](#bug-reports-suggestions-contact)
 
 ## Preview
 
