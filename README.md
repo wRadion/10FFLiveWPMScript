@@ -5,7 +5,8 @@
 3. [Languages support](https://github.com/wRadion/10ff_LiveWPMScript#languages-support)
 4. [Misc informations](https://github.com/wRadion/10ff_LiveWPMScript#misc-informations)
 5. [How to Install](https://github.com/wRadion/10ff_LiveWPMScript#how-to-install)
-6. [Bug reports, suggestions, contact](https://github.com/wRadion/10ff_LiveWPMScript#bug-reports-suggestions-contact)
+6. [Customization](https://github.com/wRadion/10ff_LiveWPMScript#customization)
+7. [Bug reports, suggestions, contact](https://github.com/wRadion/10ff_LiveWPMScript#bug-reports-suggestions-contact)
 
 ## Preview
 
@@ -55,6 +56,16 @@ Here are some examples:
 4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon.
 
 ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/2.png)
+
+## Customization
+
+You can change the alignment of the values by editing the `alignment` variable to `left`, `center` or `right`:
+
+![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_align.png)
+
+You can change the visibility of the values by editing the `*Visibility` variables to `visible` or `hidden`:
+
+![CustomVisbility](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
 
 ## Bug reports, suggestions, contact
 
