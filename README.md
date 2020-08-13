@@ -6,7 +6,8 @@
 4. [Custom Stylish theme](#custom-stylish-theme)
 5. [How to Install](#how-to-install)
 6. [Customization](#customization)
-7. [Bug reports, suggestions, contact](#bug-reports-suggestions-contact)
+7. [Auto-Update](#auto-update)
+8. [Bug reports, suggestions, contact](#bug-reports-suggestions-contact)
 
 ## Preview
 
@@ -42,30 +43,98 @@ Here are some examples:
 
 ![Styles Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview_styles.png)
 
-
 ## How to Install
 
-1. Download the [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) Chrome extension or an equivalent.
+1. Download the [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) Chrome extension or an equivalent
 
-2. Click on the extension, then **Create New Script**.
+2. Click on the extension, then **Create New Script**
+<details>
+  <summary>Image</summary>
+  
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/1.png)
+</details>
 
-![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/1.png)
+3. Copy & paste the content of the [script.js](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/script.js) file, and save it
 
-3. Copy & paste the content of the [script.js](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/script.js) file, and save it.
-
-4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon.
-
-![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/2.png)
+4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon
+<details>
+  <summary>Image</summary>
+  
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/2.png)
+</details>
 
 ## Customization
 
 You can change the alignment of the values by editing the `alignment` variable to `left`, `center` or `right`:
-
-![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_align.png)
+<details>
+  <summary>Image</summary>
+  
+  ![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_align.png)
+</details>
 
 You can change the visibility of the values by editing the `*Visibility` variables to `visible` or `hidden`:
+<details>
+  <summary>Image</summary>
+  
+  ![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
+</details>
 
-![CustomVisbility](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
+## Auto-Update
+
+With tampermonkey, you can input an URL to the file in order to update it automatically:
+
+1. Click on the extension, then click on the **+** icon to the right of the script, then **Edit**
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-1.gif)
+</details>
+
+2. Click on the **Settings** tab
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-2.png)
+</details>
+
+3. On the **Updates** section, copy this URL in the textbox: `https://raw.githubusercontent.com/wRadion/10FFLiveWPMScript/master/script.js`
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-3.png)
+</details>
+
+4. Check the **Check for updates** checkbox and click **Save**
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-4.png)
+</details>
+
+### Update interval
+
+You can change the update interval in the tampermonkey settings:
+
+1. Click on the extension, then **Dashboard**
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/2-1.png)
+</details>
+
+2. Click on **Settings** on the right
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/2-2.png)
+</details>
+
+3. In **Script Update**, you can change the **Check Interval**
+<details>
+  <summary>Image</summary>
+
+  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/2-3.png)
+</details>
 
 ## Bug reports, suggestions, contact
 
