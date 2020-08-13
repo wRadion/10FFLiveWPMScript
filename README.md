@@ -1,5 +1,12 @@
 # 10FF Live WPM Script
 
+1. [Preview](https://github.com/wRadion/10ff_LiveWPMScript#preview)
+2. [What are those numbers?](https://github.com/wRadion/10ff_LiveWPMScript#what-are-those-numbers)
+3. [Languages support](https://github.com/wRadion/10ff_LiveWPMScript#languages-support)
+4. [Misc informations](https://github.com/wRadion/10ff_LiveWPMScript#misc-informations)
+5. [How to Install](https://github.com/wRadion/10ff_LiveWPMScript#how-to-install)
+6. [Bug reports, suggestions, contact](https://github.com/wRadion/10ff_LiveWPMScript#bug-reports-suggestions-contact)
+
 ## Preview
 
 ![Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview.png)
@@ -17,6 +24,8 @@ All of these values are updated whenever you go to the next word (pressing space
 Currently, it only supports **English** and **French** normal+advanced tests, custom tests and competitions.
 
 On other languages, the values displayed might not be accurate.
+
+If you wish me to add keystrokes rules for your languages, feel free to create an issue or contact me on Discord.
 
 ## Misc informations
 
@@ -40,3 +49,9 @@ Here are some examples:
 4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon.
 
 ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/2.png)
+
+## Bug reports, suggestions, contact
+
+If you encounter a bug or have any suggestions about the script, feel free to create a github issue or contact me on Discord: **wRadion#5043**. I'm on the [offical 10FF Discord](https://discord.gg/4KypVEM) aswell, I will probably be somewhere in the #french channel.
+
+I only understand English and French, so please try to use those languages when creating an issue or contacting me.
