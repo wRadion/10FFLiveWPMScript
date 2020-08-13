@@ -34,7 +34,7 @@ On other languages, the values displayed might not be accurate.
 
 If you wish me to add keystrokes rules for your languages, feel free to create an issue or contact me on Discord.
 
-## Custom Styligh theme
+## Custom Stylish theme
 
 It supports [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
 
