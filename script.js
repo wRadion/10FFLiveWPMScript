@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         10FF Live WPM EN/FR
-// @namespace    https://www.wradion.dev
-// @version      2.5
-// @description  Live WPM for 10FF English/French tests
+// @name         10FF Live WPM
+// @namespace    https://github.com/wRadion/10FFLiveWPMScript
+// @version      2.6
+// @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
 // @match        *://10fastfingers.com/widget*
@@ -10,6 +10,21 @@
 // @match        *://10fastfingers.com/advanced-typing-test/*
 // @grant        none
 // ==/UserScript==
+
+/*******************
+ ** CUSTOMISATION **
+ *******************/
+
+const alignment =
+      'center'; // left | center | right
+const speedVisibility =
+      'visible'; // visible | hidden
+const keystrokesVisibility =
+      'visible'; // visible | hidden
+const scoreVisibility =
+      'visible'; // visible | hidden
+
+/*******************/
 
 const style = window.getComputedStyle(document.getElementById('words'), null);
 
@@ -22,16 +37,17 @@ const commonStyle =
       'padding: 8px 12px 12px 12px;';
 
 const smallStyle =
+      'text-align: center;' +
       'font-size: 10px;' +
       'margin-bottom: 6px;';
 
 (function() {
     'use strict';
 
-  $("#words").before('<h3 align="center" style="margin-bottom: -1px">' +
-                     '<div style="' + commonStyle + '"><div style="' + smallStyle + '">Speed</div><span id="live-wpm"></span> <strong>WPM</strong></div>' +
-                     '<div style="' + commonStyle + '"><div style="' + smallStyle + '">Keystrokes</div><span id="live-kw" class="correct"></span> | <span id="live-kc" class="wrong"></span></div>' +
-                     '<div style="' + commonStyle + '"><div style="' + smallStyle + '">Score</div><span id="live-raw"></span> <strong>WPM</strong></div>' +
+  $("#words").before('<h3 align="' + alignment + '" style="margin-bottom: -1px">' +
+                     '<div style="' + commonStyle + 'visibility: ' + speedVisibility + ';"><div style="' + smallStyle + '">Speed</div><span id="live-wpm"></span> <strong>WPM</strong></div>' +
+                     '<div style="' + commonStyle + 'visibility: ' + keystrokesVisibility + ';"><div style="' + smallStyle + '">Keystrokes</div><span id="live-kw" class="correct"></span> | <span id="live-kc" class="wrong"></span></div>' +
+                     '<div style="' + commonStyle + 'visibility: ' + scoreVisibility + ';"><div style="' + smallStyle + '">Score</div><span id="live-raw"></span> <strong>WPM</strong></div>' +
                      '</h3>');
 
   /* VARIABLES */
