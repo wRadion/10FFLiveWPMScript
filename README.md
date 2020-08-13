@@ -19,9 +19,15 @@ All of these values are updated whenever you go to the next word (pressing space
 - The "_Keystrokes_" values are the number of keystrokes you hit. In green, the correct keystrokes and in red, the wrong keystrokes. On 10FF, when you typed a word wrong, all the keystrokes are considered wrong (even if you did just one mistake).
 - The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can not be less than the score.
 
-## Languages support
+## Languages supported
 
-Currently, it only supports **English** and **French** normal+advanced tests, custom tests and competitions.
+Here are the languages supported by the script:
+- English
+- Filipino
+- French
+- Indonesian
+- Malagasy
+- Malaysian
 
 On other languages, the values displayed might not be accurate.
 
