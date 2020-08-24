@@ -72,11 +72,11 @@ You can change the alignment of the values by editing the `alignment` variable t
   ![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_align.png)
 </details>
 
-You can change the visibility of the values by editing the `*Visibility` variables to `visible` or `hidden`:
+You can change the visibility of the values by editing the `*Visible` variables to `true` (visible) or `false` (collapsed):
 <details>
   <summary>Image</summary>
   
-  ![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
+  ![CustomVisibility](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
 </details>
 
 ## Auto-Update
