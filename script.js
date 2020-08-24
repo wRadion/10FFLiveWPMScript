@@ -25,7 +25,7 @@ const scoreVisible = true; // true | false
 const style = window.getComputedStyle(document.getElementById('words'), null);
 
 const divStyle =
-      'font-size: 22px;'
+      'font-size: 22px;' +
       'margin-bottom: -1px;';
 
 const commonStyle =
