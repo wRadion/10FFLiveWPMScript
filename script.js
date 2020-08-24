@@ -26,6 +26,7 @@ const style = window.getComputedStyle(document.getElementById('words'), null);
 
 const divStyle =
       'font-size: 22px;' +
+      'line-height: 18px;' +
       'margin-bottom: -1px;';
 
 const commonStyle =
