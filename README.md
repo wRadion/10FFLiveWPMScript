@@ -11,7 +11,7 @@
 
 ## Preview
 
-![Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview.png)
+![Preview](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/preview.png)
 
 ## What are those numbers?
 
@@ -24,12 +24,12 @@ All of these values are updated whenever you go to the next word (pressing space
 ## Supported languages
 
 Here are the languages supported by the script:
-- ![UK-US](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/uk-us.png) English
-- ![PH](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/ph.png) Filipino
-- ![FR](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/fr.png) French
-- ![ID](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/id.png) Indonesian
-- ![MG](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/mg.png) Malagasy
-- ![MY](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/flags/my.png) Malaysian
+- ![UK-US](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/flags/uk-us.png) English
+- ![PH](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/flags/ph.png) Filipino
+- ![FR](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/flags/fr.png) French
+- ![ID](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/flags/id.png) Indonesian
+- ![MG](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/flags/mg.png) Malagasy
+- ![MY](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/flags/my.png) Malaysian
 
 On other languages, the values displayed might not be accurate.
 
@@ -41,7 +41,7 @@ It supports [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-t
 
 Here are some examples:
 
-![Styles Preview](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/preview_styles.png)
+![Styles Preview](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/preview_styles.png)
 
 ## How to Install
 
@@ -50,33 +50,36 @@ Here are some examples:
 2. Click on the extension, then **Create New Script**
 <details>
   <summary>Image</summary>
-  
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/1.png)
+
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/1.png)
 </details>
 
-3. Copy & paste the content of the [script.js](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/script.js) file, and save it
+3. Copy & paste the content of the [script.js](https://github.com/wRadion/10FFLiveWPMScript/blob/master/script.js) file, and save it
 
 4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon
 <details>
   <summary>Image</summary>
-  
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/2.png)
+
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/2.png)
 </details>
 
 ## Customization
 
 You can change the alignment of the values by editing the `alignment` variable to `left`, `center` or `right`:
+
+![Alignments](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/alignments.png)
+
 <details>
   <summary>Image</summary>
-  
-  ![CustomAlignment](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_align.png)
+
+  ![CustomAlignment](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/custom_align.png)
 </details>
 
 You can change the visibility of the values by editing the `*Visible` variables to `true` (visible) or `false` (collapsed):
 <details>
   <summary>Image</summary>
-  
-  ![CustomVisibility](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/custom_visibility.png)
+
+  ![CustomVisibility](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/custom_visibility.png)
 </details>
 
 ## Auto-Update
@@ -87,28 +90,28 @@ With tampermonkey, you can input an URL to the file in order to update it automa
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-1.gif)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/1-1.gif)
 </details>
 
 2. Click on the **Settings** tab
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-2.png)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/1-2.png)
 </details>
 
 3. On the **Updates** section, copy this URL in the textbox: `https://raw.githubusercontent.com/wRadion/10FFLiveWPMScript/master/script.js`
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-3.png)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/1-3.png)
 </details>
 
 4. Check the **Check for updates** checkbox and click **Save**
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/1-4.png)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/1-4.png)
 </details>
 
 ### Update interval
@@ -119,25 +122,25 @@ You can change the update interval in the tampermonkey settings:
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/2-1.png)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/2-1.png)
 </details>
 
 2. Click on **Settings** on the right
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/2-2.png)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/2-2.png)
 </details>
 
 3. In **Script Update**, you can change the **Check Interval**
 <details>
   <summary>Image</summary>
 
-  ![Image](https://github.com/wRadion/10ff_LiveWPMScript/blob/master/README/auto-update/2-3.png)
+  ![Image](https://github.com/wRadion/10FFLiveWPMScript/blob/master/README/auto-update/2-3.png)
 </details>
 
 ## Bug reports, suggestions, contact
 
-If you encounter a bug or have any suggestions about the script, feel free to create a github issue or contact me on Discord: **wRadion#5043**. I'm on the [offical 10FF Discord](https://discord.gg/4KypVEM) aswell, I will probably be somewhere in the #french channel.
+If you encounter a bug or have any suggestions about the script, feel free to create a github issue or contact me on Discord: **wRadion#5043**. I'm on the [offical 10FF Discord](https://discord.gg/4KypVEM) aswell, I will probably be somewhere in the _#french_ channel.
 
 I only understand English and French, so please try to use those languages when creating an issue or contacting me.
