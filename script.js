@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      2.6
+// @version      2.7
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -15,21 +15,20 @@
  ** CUSTOMISATION **
  *******************/
 
-const alignment =
-      'center'; // left | center | right
-const speedVisibility =
-      'visible'; // visible | hidden
-const keystrokesVisibility =
-      'visible'; // visible | hidden
-const scoreVisibility =
-      'visible'; // visible | hidden
+const alignment = 'center'; // left | center | right
+const speedVisible = true; // true | false
+const keystrokesVisible = true; // true | false
+const scoreVisible = true; // true | false
 
 /*******************/
 
 const style = window.getComputedStyle(document.getElementById('words'), null);
 
+const divStyle =
+      'font-size: 22px;'
+      'margin-bottom: -1px;';
+
 const commonStyle =
-      'display: inline-block;' +
       'background: ' + style.getPropertyValue('background-color') + ';' +
       'border-radius: 4px 4px 0 0;' +
       'border: ' + style.getPropertyValue('border') + ';' +
@@ -44,11 +43,13 @@ const smallStyle =
 (function() {
     'use strict';
 
-  $("#words").before('<h3 align="' + alignment + '" style="margin-bottom: -1px">' +
-                     '<div style="' + commonStyle + 'visibility: ' + speedVisibility + ';"><div style="' + smallStyle + '">Speed</div><span id="live-wpm"></span> <strong>WPM</strong></div>' +
-                     '<div style="' + commonStyle + 'visibility: ' + keystrokesVisibility + ';"><div style="' + smallStyle + '">Keystrokes</div><span id="live-kw" class="correct"></span> | <span id="live-kc" class="wrong"></span></div>' +
-                     '<div style="' + commonStyle + 'visibility: ' + scoreVisibility + ';"><div style="' + smallStyle + '">Score</div><span id="live-raw"></span> <strong>WPM</strong></div>' +
-                     '</h3>');
+  const html =
+        '<div align="' + alignment + '" style="' + divStyle + '">' +
+          '<div style="' + commonStyle + 'display: ' + (speedVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Speed</div><span id="live-wpm"></span> <strong>WPM</strong></div>' +
+          '<div style="' + commonStyle + 'display: ' + (keystrokesVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Keystrokes</div><span id="live-kw" class="correct"></span> | <span id="live-kc" class="wrong"></span></div>' +
+          '<div style="' + commonStyle + 'display: ' + (scoreVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Score</div><span id="live-raw"></span> <strong>WPM</strong></div>' +
+        '</div>';
+  $('#words').before(html);
 
   /* VARIABLES */
   var inter,
