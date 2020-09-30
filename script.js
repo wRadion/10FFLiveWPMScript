@@ -75,8 +75,8 @@ const smallStyle =
   function updateKs(kw, kc) { document.getElementById("live-kw").innerText = kw; document.getElementById("live-kc").innerText = kc; }
   function updateRaw(raw) { document.getElementById("live-raw").innerText = raw; }
   function getKeystrokes(word) {
-    return (word.match(/[a-zéèàùç'ء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g) || []).length +
-      (word.match(/[A-Zâêîôûا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g) || []).length * 2;
+    return (word.match(/[a-zéèàùç'ا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g) || []).length +
+      (word.match(/[A-Zâêîôûء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g) || []).length * 2;
   }
 
   function reset() {
