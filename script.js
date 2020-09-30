@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      2.7
+// @version      2.8
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -74,7 +74,10 @@ const smallStyle =
   function updateWpm(wpm) { document.getElementById("live-wpm").innerText = wpm; }
   function updateKs(kw, kc) { document.getElementById("live-kw").innerText = kw; document.getElementById("live-kc").innerText = kc; }
   function updateRaw(raw) { document.getElementById("live-raw").innerText = raw; }
-  function getKeystrokes(word) { return (word.match(/[a-zéèàùç']/g) || []).length + (word.match(/[A-Zâêîôû]/g) || []).length * 2; }
+  function getKeystrokes(word) {
+    return (word.match(/[a-zéèàùç'ء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g) || []).length +
+      (word.match(/[A-Zâêîôûا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g) || []).length * 2;
+  }
 
   function reset() {
     if (inter) clearInterval(inter);
