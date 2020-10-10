@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      3.0
+// @version      3.1
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -171,11 +171,14 @@ const smallStyle =
 
       /******************************/
     }
-=======
-  function getKeystrokes(word) {
-    return (word.match(/[a-zéèàùç'ا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g) || []).length +
-      (word.match(/[A-Zâêîôûء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g) || []).length * 2;
->>>>>>> afa31212adfe65cd50102b1c36b434ba212926bb
+
+    const one = (word.match(oneKeystroke) || []).length;
+    const two = (word.match(twoKeystrokes) || []).length * 2;
+    const three = (word.match(threeKeystrokes) || []).length * 3;
+    const four = (word.match(fourKeystrokes) || []).length * 4;
+    const five = (word.match(fiveKeystrokes) || []).length * 5;
+
+    return one + two + three + four + five;
   }
 
   function reset() {
