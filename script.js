@@ -82,7 +82,6 @@ const smallStyle =
   function updateWpm(wpm) { document.getElementById("live-wpm").innerText = wpm; }
   function updateKs(kw, kc) { document.getElementById("live-kw").innerText = kw; document.getElementById("live-kc").innerText = kc; }
   function updateRaw(raw) { document.getElementById("live-raw").innerText = raw; }
-<<<<<<< HEAD
 
   function getKeystrokes(word) {
     var oneKeystroke = null;
