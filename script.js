@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      2.7
+// @version      2.8
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -26,6 +26,7 @@ const style = window.getComputedStyle(document.getElementById('words'), null);
 
 const divStyle =
       'font-size: 22px;' +
+      'line-height: 18px;' +
       'margin-bottom: -1px;';
 
 const commonStyle =
@@ -52,7 +53,8 @@ const smallStyle =
   $('#words').before(html);
 
   /* VARIABLES */
-  var inter,
+  var language,
+      inter,
       timer,
       durationRatio,
       startTime,
@@ -60,6 +62,13 @@ const smallStyle =
       keystrokesWrong,
       index;
 
+  /* SETUP */
+  const languageId = parseInt($('#speedtest-id').attr('value'));
+  language = [
+    null, 'english', 'german', 'french', 'portugese', 'spanish', 'indonesian', 'turkish', 'vietnamese', 'polish', 'romanian', 'malaysian', 'norwegian', 'persian', 'hungarian', 'chinese_traditional', 'chinese_simplified',
+    'danish', 'dutch', 'swedish', 'italian', 'finnish', 'serbian', 'catalan', 'filipino', 'croatian', 'russian', 'arabic', 'bulgarian', 'japanese', 'albanian', 'korean', 'greek', 'czech', 'estonian', 'latvian', 'hebrew',
+    'urdu', 'galician', 'lithuanian', 'georgian', 'armenian', 'kurdish', 'azerbaijani', 'hindi', 'slovak', 'slovenian', null, 'icelandic', null, 'thai', 'pashto', 'esperanto', 'ukrainian', 'macedonian', 'malagasy', 'bengali'
+  ][languageId];
 
   /* FUNCTIONS */
   function getDuration() {
@@ -73,7 +82,95 @@ const smallStyle =
   function updateWpm(wpm) { document.getElementById("live-wpm").innerText = wpm; }
   function updateKs(kw, kc) { document.getElementById("live-kw").innerText = kw; document.getElementById("live-kc").innerText = kc; }
   function updateRaw(raw) { document.getElementById("live-raw").innerText = raw; }
-  function getKeystrokes(word) { return (word.match(/[a-zéèàùç']/g) || []).length + (word.match(/[A-Zâêîôû]/g) || []).length * 2; }
+
+  function getKeystrokes(word) {
+    var oneKeystroke = null;
+    var twoKeystrokes = null;
+    var threeKeystrokes = null;
+    var fourKeystrokes = null;
+    var fiveKeystrokes = null;
+
+    switch (language) {
+      /******************************
+       ** KEYSTROKES CUSTOMISATION **
+       ******************************/
+
+      case 'danish':
+        oneKeystroke = /[^A-ZÆØÅ]/g;
+        twoKeystrokes = /[A-ZÆØÅ]/g;
+        break;
+
+      case 'dutch':
+        oneKeystroke = /[^A-Zé]/g;
+        twoKeystrokes = /[A-Zé]/g;
+        break;
+
+      case 'esperanto':
+        oneKeystroke = /[^A-Zĉŭŝĝĵĥ]/g;
+        twoKeystrokes = /[A-Zĉŭŝĝĵĥ]/g;
+        break;
+
+      case 'french':
+        oneKeystroke = /[a-zéèàùç'-]/g;
+        twoKeystrokes = /[A-Zâêîôû]/g;
+        threeKeystrokes = /[ÂÊÎÔÛäëïüÿÄËÏÜ]/g;
+        fourKeystrokes = /[ÀÈÙÇÉ]/g;
+        fiveKeystrokes = /[ŒœŸ]/g;
+        break;
+
+      case 'german':
+        oneKeystroke = /[a-zäöüß]/g;
+        twoKeystrokes = /[A-ZÄÖÜ]/g;
+        break;
+
+      case 'italian':
+        oneKeystroke = /[^A-Zé]/g;
+        twoKeystrokes = /[A-Zé]/g;
+        break;
+
+      case 'latvian':
+        oneKeystroke = /[^A-Zēūīāšģķļžčņ]/g;
+        twoKeystrokes = /[A-Zēūīāšģķļžčņ]/g;
+        break;
+
+      case 'lithuanian':
+        oneKeystroke = /[^A-Ząčęėįšųūž]/g;
+        twoKeystrokes = /A-Ząčęėįšųūž]/g;
+        break;
+
+      case 'persian':
+        oneKeystroke = /[^ژآء ّ َ ُ]/g;
+        twoKeystrokes = /[ژآء ّ َ ُ]/g;
+        break;
+
+      case 'polish':
+        oneKeystroke = /[^A-Ząćęłńóśźż]/g;
+        twoKeystrokes = /[A-Ząćęłńóśźż]/g;
+        break;
+
+      case 'romanian':
+        oneKeystroke = /[^ăâîșț]/g;
+        twoKeystrokes = /[ăâîșț]/g;
+        break;
+
+      case 'turkish':
+        oneKeystroke = /[^A-ZÖÜÇŞĞİ]/g;
+        twoKeystrokes = /[A-ZÖÜÇŞĞİ]/g;
+        break;
+
+      case 'urdu':
+        oneKeystroke = /[ء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g;
+        twoKeystrokes = /[ا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g;
+        break;
+
+      default: // english, indonesian, malaysian, filipino, malagasy
+        oneKeystroke = /[a-z'-]/g;
+        twoKeystrokes = /[A-Z]/g;
+        break;
+
+      /******************************/
+    }
+  }
 
   function reset() {
     if (inter) clearInterval(inter);
