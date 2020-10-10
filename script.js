@@ -82,6 +82,7 @@ const smallStyle =
   function updateWpm(wpm) { document.getElementById("live-wpm").innerText = wpm; }
   function updateKs(kw, kc) { document.getElementById("live-kw").innerText = kw; document.getElementById("live-kc").innerText = kc; }
   function updateRaw(raw) { document.getElementById("live-raw").innerText = raw; }
+<<<<<<< HEAD
 
   function getKeystrokes(word) {
     var oneKeystroke = null;
@@ -170,6 +171,11 @@ const smallStyle =
 
       /******************************/
     }
+=======
+  function getKeystrokes(word) {
+    return (word.match(/[a-zéèàùç'ا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g) || []).length +
+      (word.match(/[A-Zâêîôûء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g) || []).length * 2;
+>>>>>>> afa31212adfe65cd50102b1c36b434ba212926bb
   }
 
   function reset() {
