@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      3.1
+// @version      3.2
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -18,6 +18,7 @@
 const alignment = 'center'; // left | center | right
 const speedVisible = true; // true | false
 const keystrokesVisible = true; // true | false
+const wordsVisible = true; // true | false
 const scoreVisible = true; // true | false
 
 /*******************/
@@ -47,7 +48,8 @@ const smallStyle =
   const html =
         '<div align="' + alignment + '" style="' + divStyle + '">' +
           '<div style="' + commonStyle + 'display: ' + (speedVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Speed</div><span id="live-wpm"></span> <strong>WPM</strong></div>' +
-          '<div style="' + commonStyle + 'display: ' + (keystrokesVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Keystrokes</div><span id="live-kw" class="correct"></span> | <span id="live-kc" class="wrong"></span></div>' +
+          '<div style="' + commonStyle + 'display: ' + (keystrokesVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Keystrokes</div><span id="live-kc" class="correct"></span> | <span id="live-kw" class="wrong"></span></div>' +
+          '<div style="' + commonStyle + 'display: ' + (wordsVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Words</div><span id="live-wc" class="correct"></span> | <span id="live-ww" class="wrong"></span></div>' +
           '<div style="' + commonStyle + 'display: ' + (scoreVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Score</div><span id="live-raw"></span> <strong>WPM</strong></div>' +
         '</div>';
   $('#words').before(html);
@@ -60,6 +62,8 @@ const smallStyle =
       startTime,
       keystrokesCorrect,
       keystrokesWrong,
+      wordsCorrect,
+      wordsWrong,
       index;
 
   /* SETUP */
@@ -80,7 +84,8 @@ const smallStyle =
   }
 
   function updateWpm(wpm) { document.getElementById("live-wpm").innerText = wpm; }
-  function updateKs(kw, kc) { document.getElementById("live-kw").innerText = kw; document.getElementById("live-kc").innerText = kc; }
+  function updateKs(kc, kw) { document.getElementById("live-kc").innerText = kc; document.getElementById("live-kw").innerText = kw; }
+  function updateWs(wc, ww) { document.getElementById("live-wc").innerText = wc; document.getElementById("live-ww").innerText = ww; }
   function updateRaw(raw) { document.getElementById("live-raw").innerText = raw; }
 
   function getKeystrokes(word) {
@@ -188,9 +193,12 @@ const smallStyle =
     startTime = null;
     keystrokesCorrect = 0;
     keystrokesWrong = 0;
+    wordsCorrect = 0;
+    wordsWrong = 0;
     index = 0;
     updateWpm('?');
     updateKs('?', '?');
+    updateWs('?', '?');
     updateRaw('?');
     document.getElementById("inputfield").focus();
   }
@@ -201,11 +209,12 @@ const smallStyle =
   }
 
   function start() {
-      startTime = Date.now();
-      updateWpm(0);
-      updateKs(0, 0);
-      updateRaw(0);
-      inter = setInterval(() => { if (--timer === 0) stop(); }, 1000);
+    startTime = Date.now();
+    updateWpm(0);
+    updateKs(0, 0);
+    updateWs(0, 0);
+    updateRaw(0);
+    inter = setInterval(() => { if (--timer === 0) stop(); }, 1000);
   }
 
   /* EVENT HANDLERS */
@@ -237,16 +246,18 @@ const smallStyle =
 
       if (word) {
         keystrokesCorrect += getKeystrokes(word.innerText) + 1;
-      }
-      else {
+        wordsCorrect += 1;
+      } else {
         --index;
         const wrongWords = $(".wrong[wordnr]");
         keystrokesWrong += getKeystrokes(wrongWords[wrongWords.length - 1].innerText) + 1;
+        wordsWrong += 1;
       }
 
       const tmp = keystrokesCorrect / 5;
       updateWpm(((tmp * 60 * 1000) / (Date.now() - startTime)).toFixed(2));
       updateKs(keystrokesCorrect, keystrokesWrong);
+      updateWs(wordsCorrect, wordsWrong);
       updateRaw((tmp * durationRatio).toFixed(2));
     }
   };
