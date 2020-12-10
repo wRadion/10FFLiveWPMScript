@@ -167,6 +167,10 @@ const smallStyle =
         oneKeystroke = /[ء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g;
         twoKeystrokes = /[ا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g;
         break;
+                
+      case 'thai': // temporary fix, count all chars as 1 keystroke
+        oneKeystroke = /./g;
+        break;
 
       default: // english, indonesian, malaysian, filipino, malagasy
         oneKeystroke = /[a-z'\-\.]/g;
