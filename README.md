@@ -2,9 +2,9 @@
 
 1. [Preview](#preview)
 2. [What are those numbers?](#what-are-those-numbers)
-3. [Supported languages](#supported-languages)
-4. [Custom Stylish theme](#custom-stylish-theme)
-5. [How to Install](#how-to-install)
+3. [How to Install](#how-to-install)
+4. [Supported languages](#supported-languages)
+5. [Custom Stylish theme](#custom-stylish-theme)
 6. [Customization](#customization)
 7. [Auto-Update](#auto-update)
 8. [Bug reports, suggestions, contact](#bug-reports-suggestions-contact)
@@ -18,8 +18,37 @@
 All of these values are updated whenever you go to the next word (pressing space).
 
 - The "_Speed_" value is your current speed (in WPM = Words Per Minute)
-- The "_Keystrokes_" values are the number of keystrokes you hit. In green, the correct keystrokes and in red, the wrong keystrokes. On 10FF, when you typed a word wrong, all the keystrokes are considered wrong (even if you did just one mistake).
+- The "_Keystrokes_" values are the number of keystrokes you hit:
+  - In green, the correct keystrokes and in red, the wrong keystrokes
+  - On 10FF, when you typed a word wrong, all the keystrokes are considered wrong, even if you did just one mistake
+- The "_Words_" value is the number of words you typed:
+  - In green, the correct words and in red, the wrong words
+  - On 10FF, when you typed a word wrong, it is considered wrong even if you did just one mistake
 - The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can not be less than the score.
+
+## How to Install
+
+### 1.
+Download the **tampermonkey** extension or an equivalent:
+- Chrome: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/
+
+### 2.
+<details>
+  <summary>Click on the extension, then <b>Create New Script</b></summary>
+
+  ![Image](./README/1.png)
+</details>
+
+### 3.
+Copy & paste the content of the [script.js](./script.js) file, and save it
+
+### 4.
+<details>
+  <summary>Now you can go on <a href="https://10fastfingers.com/typing-test/">https://10fastfingers.com/typing-test</a> and toggle the script by clicking on the icon</summary>
+
+  ![Image](./README/2.png)
+</details>
 
 ## Supported languages
 
@@ -57,41 +86,19 @@ Here are some examples:
 
 ![Styles Preview](./README/preview_styles.png)
 
-## How to Install
-
-1. Download the [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) Chrome extension or an equivalent
-
-2. Click on the extension, then **Create New Script**
-<details>
-  <summary>Image</summary>
-
-  ![Image](./README/1.png)
-</details>
-
-3. Copy & paste the content of the [script.js](./script.js) file, and save it
-
-4. Now you can go on https://10fastfingers.com/typing-test and toggle the script by clicking on the icon
-<details>
-  <summary>Image</summary>
-
-  ![Image](./README/2.png)
-</details>
-
 ## Customization
 
-You can change the alignment of the values by editing the `alignment` variable to `left`, `center` or `right`:
-
-![Alignments](./README/alignments.png)
-
 <details>
-  <summary>Image</summary>
+  <summary>You can change the alignment of the values by editing the <code>alignment</code> variable to <code>left</code>, <code>center</code> or <code>right</code>:</summary>
+
 
   ![CustomAlignment](./README/custom_align.png)
 </details>
 
-You can change the visibility of the values by editing the `*Visible` variables to `true` (visible) or `false` (collapsed):
+![Alignments](./README/alignments.png)
+
 <details>
-  <summary>Image</summary>
+  <summary>You can change the visibility of the values by editing the <code>*Visible</code> variables to <code>true</code> (visible) or <code>false</code> (collapsed):</summary>
 
   ![CustomVisibility](./README/custom_visibility.png)
 </details>
@@ -100,30 +107,30 @@ You can change the visibility of the values by editing the `*Visible` variables 
 
 With tampermonkey, you can input an URL to the file in order to update it automatically:
 
-1. Click on the extension, then click on the **+** icon to the right of the script, then **Edit**
+### 1.
 <details>
-  <summary>Image</summary>
+  <summary>Click on the extension, then click on the **+** icon to the right of the script, then <b>Edit</b></summary>
 
   ![Image](./README/auto-update/1-1.gif)
 </details>
 
-2. Click on the **Settings** tab
+### 2.
 <details>
-  <summary>Image</summary>
+  <summary>Click on the <b>Settings</b> tab</summary>
 
   ![Image](./README/auto-update/1-2.png)
 </details>
 
-3. On the **Updates** section, copy this URL in the textbox: `https://raw.githubusercontent.com/wRadion/10FFLiveWPMScript/master/script.js`
+### 3.
 <details>
-  <summary>Image</summary>
+  <summary>On the <b>Updates</b> section, copy this URL in the textbox: <code>https://raw.githubusercontent.com/wRadion/10FFLiveWPMScript/master/script.js</code></summary>
 
   ![Image](./README/auto-update/1-3.png)
 </details>
 
-4. Check the **Check for updates** checkbox and click **Save**
+### 4.
 <details>
-  <summary>Image</summary>
+  <summary>Check the <b>Check for updates</b> checkbox and click <b>Save</b></summary>
 
   ![Image](./README/auto-update/1-4.png)
 </details>
@@ -132,23 +139,23 @@ With tampermonkey, you can input an URL to the file in order to update it automa
 
 You can change the update interval in the tampermonkey settings:
 
-1. Click on the extension, then **Dashboard**
+### 1.
 <details>
-  <summary>Image</summary>
+  <summary>Click on the extension, then <b>Dashboard</b></summary>
 
   ![Image](./README/auto-update/2-1.png)
 </details>
 
-2. Click on **Settings** on the right
+### 2.
 <details>
-  <summary>Image</summary>
+  <summary>Click on <b>Settings</b> on the right</summary>
 
   ![Image](./README/auto-update/2-2.png)
 </details>
 
-3. In **Script Update**, you can change the **Check Interval**
+### 3.
 <details>
-  <summary>Image</summary>
+  <summary>In <b>Script Update</b>, you can change the <b>Check Interval</b></summary>
 
   ![Image](./README/auto-update/2-3.png)
 </details>
