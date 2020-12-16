@@ -1,5 +1,7 @@
 # 10FF Live WPM Script
 
+How to Setup Video : https://www.youtube.com/watch?v=u9ihTqpMX8E
+
 1. [Preview](#preview)
 2. [What are those numbers?](#what-are-those-numbers)
 3. [How to Install](#how-to-install)
