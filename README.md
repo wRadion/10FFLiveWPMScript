@@ -91,6 +91,12 @@ Here are some examples:
 ## Customization
 
 <details>
+  <summary>To Edit the script, click on the <b>+</b> icon to the right of the script, then <b>Edit</b></summary>
+
+  ![Image](./README/auto-update/1-1.gif)
+</details>
+
+<details>
   <summary>You can change the alignment of the values by editing the <code>alignment</code> variable to <code>left</code>, <code>center</code> or <code>right</code>:</summary>
 
 
@@ -111,7 +117,7 @@ With tampermonkey, you can input an URL to the file in order to update it automa
 
 ### 1.
 <details>
-  <summary>Click on the extension, then click on the **+** icon to the right of the script, then <b>Edit</b></summary>
+  <summary>Click on the extension, then click on the <b>+</b> icon to the right of the script, then <b>Edit</b></summary>
 
   ![Image](./README/auto-update/1-1.gif)
 </details>
