@@ -52,7 +52,9 @@ const smallStyle =
           '<div style="' + commonStyle + 'display: ' + (wordsVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Words</div><span id="live-wc" class="correct"></span> | <span id="live-ww" class="wrong"></span></div>' +
           '<div style="' + commonStyle + 'display: ' + (scoreVisible ? 'inline-block' : 'none') + ';"><div style="' + smallStyle + '">Score</div><span id="live-raw"></span> <strong>WPM</strong></div>' +
         '</div>';
-  $('#words').before(html);
+  let infoBar = document.createElement('div');
+  infoBar.innerHTML = html;
+  document.querySelector('#words').before(infoBar);
 
   /* VARIABLES */
   var language,
@@ -67,7 +69,7 @@ const smallStyle =
       index;
 
   /* SETUP */
-  const languageId = parseInt($('#speedtest-id').attr('value'));
+  const languageId = parseInt(document.querySelector('#speedtest-id').attributes.value);
   language = [
     null, 'english', 'german', 'french', 'portugese', 'spanish', 'indonesian', 'turkish', 'vietnamese', 'polish', 'romanian', 'malaysian', 'norwegian', 'persian', 'hungarian', 'chinese_traditional', 'chinese_simplified',
     'danish', 'dutch', 'swedish', 'italian', 'finnish', 'serbian', 'catalan', 'filipino', 'croatian', 'russian', 'arabic', 'bulgarian', 'japanese', 'albanian', 'korean', 'greek', 'czech', 'estonian', 'latvian', 'hebrew',
@@ -167,7 +169,7 @@ const smallStyle =
         oneKeystroke = /[ء آ ؤ ئ ث چ خ ذ ڈ ز ڑ ژ ض ظ گ ں ۂ ۃ ي ۓ]/g;
         twoKeystrokes = /[ا ب پ ت ٹ ج ح د ر س ش ص ط ع غ ف ق ک ل م ن ھ ہ و ی ے]/g;
         break;
-                
+
       case 'thai': // temporary fix, count all chars as 1 keystroke
         oneKeystroke = /./g;
         break;
@@ -246,14 +248,14 @@ const smallStyle =
     }
 
     if (e.keyCode === 32) {
-      const word = $(".correct[wordnr]")[index++];
+      const word = document.querySelectorAll(".correct[wordnr]")[index++];
 
       if (word) {
         keystrokesCorrect += getKeystrokes(word.innerText) + 1;
         wordsCorrect += 1;
       } else {
         --index;
-        const wrongWords = $(".wrong[wordnr]");
+        const wrongWords = document.querySelectorAll(".wrong[wordnr]");
         keystrokesWrong += getKeystrokes(wrongWords[wrongWords.length - 1].innerText) + 1;
         wordsWrong += 1;
       }
