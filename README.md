@@ -55,6 +55,7 @@ Copy & paste the content of the [script.js](./script.js) file, and save it
 ## Supported languages
 
 Here are the languages supported by the script:
+- ![AL](./README/flags/al.png) Albanian
 - ![DK](./README/flags/dk.png) Danish
 - ![NL](./README/flags/nl.png) Dutch
 - ![UK-US](./README/flags/uk-us.png) English
