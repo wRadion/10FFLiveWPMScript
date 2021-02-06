@@ -73,11 +73,7 @@ A lot of languages are now supported by the script. Instead of writing the **sup
 - ![RU](./README/flags/ru.png) Russian
 - ![UA](./README/flags/ua.png) Ukrainian
 
-If you notice some inaccuracies of the script on those languages, please create an issue or contact me on Discord.
-
-On other languages, the values displayed might not be accurate.
-
-If you wish me to add keystrokes rules for your languages, feel free to create an issue or contact me on Discord.
+If you wish me to add keystrokes rules for these languages, feel free to create an issue or contact me on Discord.
 
 ## Custom Stylish theme
 
