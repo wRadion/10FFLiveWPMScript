@@ -54,26 +54,24 @@ Copy & paste the content of the [script.js](./script.js) file, and save it
 
 ## Supported languages
 
-Here are the languages supported by the script:
-- ![AL](./README/flags/al.png) Albanian
-- ![DK](./README/flags/dk.png) Danish
-- ![NL](./README/flags/nl.png) Dutch
-- ![UK-US](./README/flags/uk-us.png) English
-- ![Esperanto](./README/flags/esperanto.png) Esperanto
-- ![PH](./README/flags/ph.png) Filipino
-- ![FR](./README/flags/fr.png) French
-- ![DE](./README/flags/de.png) German
-- ![ID](./README/flags/id.png) Indonesian
-- ![IT](./README/flags/it.png) Italian
-- ![LV](./README/flags/lv.png) Latvian
-- ![LT](./README/flags/lt.png) Lithuanian
-- ![MG](./README/flags/mg.png) Malagasy
-- ![MY](./README/flags/my.png) Malaysian
-- ![IR](./README/flags/ir.png) Persian
-- ![PL](./README/flags/pl.png) Polish
-- ![RO](./README/flags/ro.png) Romanian
-- ![TR](./README/flags/tr.png) Turkish
-- ![PK](./README/flags/pk.png) Urdu
+A lot of languages are now supported by the script. Instead of writing the **supported languages**, here are the **unsupported languages**:
+
+**UNSUPPORTED LANGUAGES:**
+- ![Arabic](./README/flags/arabic.png) Arabic
+- ![AM](./README/flags/am.png) Armenian
+- ![BD](./README/flags/bd.png) Bengali
+- ![BG](./README/flags/bg.png) Bulgarian
+- ![CN](./README/flags/cn.png) Chinese
+- ![GE](./README/flags/ge.png) Georgian
+- ![IL](./README/flags/il.png) Hebrew
+- ![IN](./README/flags/in.png) Hindi
+- ![JP](./README/flags/jp.png) Japanese
+- ![KR](./README/flags/kr.png) Korean
+- ![Kurdish](./README/flags/kurdish.png) Kurdish
+- ![MK](./README/flags/mk.png) Macedonian
+- ![AF](./README/flags/af.png) Pashto
+- ![RU](./README/flags/ru.png) Russian
+- ![UA](./README/flags/ua.png) Ukrainian
 
 If you notice some inaccuracies of the script on those languages, please create an issue or contact me on Discord.
 

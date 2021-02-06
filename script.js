@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      4.2
+// @version      4.3
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -103,31 +103,71 @@ const smallStyle =
        ******************************/
 
       case 'albanian':
-        oneKeystroke = /[a-zëç]/g;
-        twoKeystrokes = /[A-ZË]/g;
+        oneKeystroke = /[a-zçë]/g;
+        twoKeystrokes = /[A-ZÇË]/g;
+        break;
+
+      case 'azerbaijani':
+        oneKeystroke = /[a-zçəğıöşü]/g;
+        twoKeystrokes = /[A-ZÇƏĞIİÖŞÜ]/g;
+        break;
+
+      case 'catalan':
+        oneKeystroke = /[a-zç]/g;
+        twoKeystrokes = /[A-ZÇàèòéíóú]/g;
+        threeKeystrokes = /ÀÈÒÉÍÓÚïü/g;
+        fourKeystrokes = /[ÏÜ]/g;
+        break;
+
+      case 'croatian':
+        oneKeystroke = /[a-zćčđšž]/g;
+        twoKeystrokes = /[A-ZĆČĐŠŽ]/g;
+        break;
+
+      case 'czech':
+        oneKeystroke = /[a-záéěíščřúůýž]/g;
+        twoKeystrokes = /[A-Zó]/g;
+        threeKeystrokes = /[ďťňÁÉÍÓÚÝ]/g;
+        fourKeystrokes = /[ĚŠČŘŽŇŤĎŮ]/g;
         break;
 
       case 'danish':
-        oneKeystroke = /[^A-ZÆØÅ]/g;
-        twoKeystrokes = /[A-ZÆØÅ]/g;
+        oneKeystroke = /[a-zåæø]/g;
+        twoKeystrokes = /[A-ZÅÆØ]/g;
         break;
 
       case 'dutch':
-        oneKeystroke = /[^A-Zé]/g;
+        oneKeystroke = /[a-z']/g;
         twoKeystrokes = /[A-Zé]/g;
         break;
 
       case 'esperanto':
-        oneKeystroke = /[^A-Zĉŭŝĝĵĥ]/g;
-        twoKeystrokes = /[A-Zĉŭŝĝĵĥ]/g;
+        oneKeystroke = /[a-z]/g;
+        twoKeystrokes = /[A-Zĉĝĥĵŝŭ]/g;
+        break;
+
+      case 'estonian':
+        oneKeystroke = /[a-zõäöü]/g;
+        twoKeystrokes = /[A-ZÕÄÖÜ]/g;
+        break;
+
+      case 'finnish':
+        oneKeystroke = /[a-zäö]/g;
+        twoKeystrokes = /[A-ZÄÖ]/g;
         break;
 
       case 'french':
-        oneKeystroke = /[a-zéèàùç'-]/g;
+        oneKeystroke = /[a-zàçéèù'-]/g;
         twoKeystrokes = /[A-Zâêîôû]/g;
         threeKeystrokes = /[ÂÊÎÔÛäëïüÿÄËÏÜ]/g;
         fourKeystrokes = /[ÀÈÙÇÉ]/g;
         fiveKeystrokes = /[ŒœŸ]/g;
+        break;
+
+      case 'galician':
+        oneKeystroke = /[a-zñ]/g;
+        twoKeystrokes = /[A-ZáéíóúÑ]/g;
+        threeKeystrokes = /[ÁÉÍÓÚ]/g;
         break;
 
       case 'german':
@@ -135,39 +175,99 @@ const smallStyle =
         twoKeystrokes = /[A-ZÄÖÜ]/g;
         break;
 
+      case 'greek':
+        oneKeystroke = /[αβγδεζηθικλμνξοπρσςτυφχψω]/g;
+        twoKeystrokes = /[άήίώόύέΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ]/g;
+        threeKeystrokes = /[ϊϋΐΰΆΉΊΏΌΎΈ]/g;
+        fourKeystrokes = /[ΪΫ]/g;
+        break;
+
+      case 'hungarian':
+        oneKeystroke = /[a-záéíóöőúüű]/g;
+        twoKeystrokes = /[A-ZÁÉÍÓÖŐÚÜŰ]/g;
+        break;
+
+      case 'icelandic':
+        oneKeystroke = /[a-zðþæö]/g;
+        twoKeystroke = /[A-ZÐÞÆÖáéúíóý]/g;
+        threeKeystrokes = /[ÁÉÍÓÚÝ]/g;
+        break;
+
       case 'italian':
-        oneKeystroke = /[^A-Zé]/g;
-        twoKeystrokes = /[A-Zé]/g;
+        oneKeystroke = /[a-zàèìòù]/g;
+        twoKeystrokes = /[A-Zçé]/g;
         break;
 
       case 'latvian':
-        oneKeystroke = /[^A-Zēūīāšģķļžčņ]/g;
-        twoKeystrokes = /[A-Zēūīāšģķļžčņ]/g;
+        oneKeystroke = /[a-z]/g;
+        twoKeystrokes = /[A-Zāčēģīķļņšūž]/g;
+        threeKeystrokes = /[ĀČĒĢĪĶĻŅŠŪŽ]/g;
         break;
 
       case 'lithuanian':
-        oneKeystroke = /[^A-Ząčęėįšųūž]/g;
-        twoKeystrokes = /A-Ząčęėįšųūž]/g;
+        oneKeystroke = /[a-z]/g;
+        twoKeystrokes = /A-Ząčęėįšųūž]/g; // Shouldn't be two
+        break;
+
+      case 'norwegian':
+        oneKeystroke = /[a-zåæø]/g;
+        twoKeystrokes = /[A-ZÅÆØ]/g;
         break;
 
       case 'persian':
-        oneKeystroke = /[^ژآء ّ َ ُ]/g;
-        twoKeystrokes = /[ژآء ّ َ ُ]/g;
+        oneKeystroke = /[ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی]/g;
+        twoKeystrokes = /[ژ آ ء ّ َ ُ ِ]/g;
         break;
 
       case 'polish':
-        oneKeystroke = /[^A-Ząćęłńóśźż]/g;
-        twoKeystrokes = /[A-Ząćęłńóśźż]/g;
+        oneKeystroke = /[a-z]/g;
+        twoKeystrokes = /[A-Ząćęłńóśźż]/g; // Some should be one
+        threeKeystrokes = /[ĄĆĘŁŃÓŚŹŻ]/g; // Some should be two
+        break;
+
+      case 'portugese':
+        oneKeystroke = /[a-zç]/g;
+        twoKeystrokes = /[A-ZÇáãéíóõú]/g;
+        threeKeystrokes = /[ÁÃÀÂÉÊÍÓÕÔÚàâêô]/g;
         break;
 
       case 'romanian':
-        oneKeystroke = /[^ăâîșț]/g;
-        twoKeystrokes = /[ăâîșț]/g;
+        oneKeystroke = /[a-z]/g;
+        twoKeystrokes = /[A-Zăâîșț]/g; // Should be one
+        break;
+
+      case 'serbian':
+        oneKeystroke = /[a-zćčđšž]/g;
+        twoKeystrokes = /[A-ZĆČĐŠŽ]/g;
+        break;
+
+      case 'slovak':
+        oneKeystroke = /[a-záäčéíľňôšťúýž]/g;
+        twoKeystrokes = /[A-Z]/g;
+        threeKeystrokes = /[ďĎÁČÉÍĽŇŠŤÚÝŽ]/g;
+        fourKeystrokes = /[ÄÔ]/g;
+        break;
+
+      case 'slovenian':
+        oneKeystroke = /[a-zčšž]/g;
+        twoKeystrokes = /[A-ZČŠŽ]/g;
+        break;
+
+      case 'spanish':
+        oneKeystroke = /[a-zñ]/g;
+        twoKeystrokes = /[A-ZáéíóúÑ]/g;
+        threeKeystrokes = /[ÁÉÍÓÚü]/g;
+        fourKeystrokes = /[Ü]/g;
+        break;
+
+      case 'swedish':
+        oneKeystroke = /[a-zåäö]/g;
+        twoKeystrokes = /[A-ZÅÄÖ]/g;
         break;
 
       case 'turkish':
-        oneKeystroke = /[^A-ZÖÜÇŞĞİ]/g;
-        twoKeystrokes = /[A-ZÖÜÇŞĞİ]/g;
+        oneKeystroke = /[a-zçğıöşü]/g;
+        twoKeystrokes = /[A-ZÇĞIİÖŞÜ]/g;
         break;
 
       case 'urdu':
@@ -177,6 +277,12 @@ const smallStyle =
 
       case 'thai': // temporary fix, count all chars as 1 keystroke
         oneKeystroke = /./g;
+        break;
+
+      case 'vietnamese':
+        oneKeystroke = /[a-z]/g;
+        twoKeystrokes = /[A-Zăâáàạảãđéèẻẽẹêíìỉĩịôơóòỏõọưúùủũụýỳỷỹỵ]/g;
+        threeKeystrokes = /[ắằặẳẵấầậẩẫếềểễệốồổỗộớờởỡợứừửữự]/g;
         break;
 
       default: // english, indonesian, malaysian, filipino, malagasy
