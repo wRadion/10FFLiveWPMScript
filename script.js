@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      4.4
+// @version      4.5
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -205,8 +205,8 @@ const smallStyle =
         break;
 
       case 'lithuanian':
-        oneKeystroke = /[a-z]/g;
-        twoKeystrokes = /[A-Ząčęėįšųūž]/g; // Shouldn't be two
+        oneKeystroke = /[a-ząčęėįšųūž]/g;
+        twoKeystrokes = /[A-ZĄČĘĖĮŠŲŪŽ]/g;
         break;
 
       case 'norwegian':
