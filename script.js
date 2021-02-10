@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      4.5
+// @version      4.6
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -208,6 +208,11 @@ const smallStyle =
         oneKeystroke = /[a-ząčęėįšųūž]/g;
         twoKeystrokes = /[A-ZĄČĘĖĮŠŲŪŽ]/g;
         break;
+                
+      case 'malagasy':
+        oneKeystroke = /[a-zà'-]/g;
+        twoKeystrokes = /[A-Z]/g;
+        break;
 
       case 'norwegian':
         oneKeystroke = /[a-zåæø]/g;
@@ -285,7 +290,7 @@ const smallStyle =
         threeKeystrokes = /[ắằặẳẵấầậẩẫếềểễệốồổỗộớờởỡợứừửữự]/g;
         break;
 
-      default: // english, indonesian, malaysian, filipino, malagasy
+      default: // english, indonesian, malaysian, filipino
         oneKeystroke = /[a-z'\-\.]/g;
         twoKeystrokes = /[A-Z]/g;
         break;
