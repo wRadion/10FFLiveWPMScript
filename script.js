@@ -71,7 +71,7 @@ const smallStyle =
   /* SETUP */
   const languageId = parseInt(document.querySelector('#speedtest-id').attributes.value.value);
   language = [
-    null, 'english', 'german', 'french', 'portugese', 'spanish', 'indonesian', 'turkish', 'vietnamese', 'polish', 'romanian', 'malaysian', 'norwegian', 'persian', 'hungarian', 'chinese_traditional', 'chinese_simplified',
+    null, 'english', 'german', 'french', 'portuguese', 'spanish', 'indonesian', 'turkish', 'vietnamese', 'polish', 'romanian', 'malaysian', 'norwegian', 'persian', 'hungarian', 'chinese_traditional', 'chinese_simplified',
     'danish', 'dutch', 'swedish', 'italian', 'finnish', 'serbian', 'catalan', 'filipino', 'croatian', 'russian', 'arabic', 'bulgarian', 'japanese', 'albanian', 'korean', 'greek', 'czech', 'estonian', 'latvian', 'hebrew',
     'urdu', 'galician', 'lithuanian', 'georgian', 'armenian', 'kurdish', 'azerbaijani', 'hindi', 'slovak', 'slovenian', null, 'icelandic', null, 'thai', 'pashto', 'esperanto', 'ukrainian', 'macedonian', 'malagasy', 'bengali'
   ][languageId];
@@ -230,7 +230,7 @@ const smallStyle =
         threeKeystrokes = /[ĄĆĘŁŃÓŚŹŻ]/g; // Some should be two
         break;
 
-      case 'portugese':
+      case 'portuguese':
         oneKeystroke = /[a-zç]/g;
         twoKeystrokes = /[A-ZÇáãéíóõú]/g;
         threeKeystrokes = /[ÁÃÀÂÉÊÍÓÕÔÚàâêô]/g;
