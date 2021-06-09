@@ -60,7 +60,6 @@ A lot of languages are now supported by the script. Instead of writing the **sup
 - ![Arabic](./README/flags/arabic.png) Arabic
 - ![AM](./README/flags/am.png) Armenian
 - ![BD](./README/flags/bd.png) Bengali
-- ![BG](./README/flags/bg.png) Bulgarian
 - ![CN](./README/flags/cn.png) Chinese
 - ![GE](./README/flags/ge.png) Georgian
 - ![IL](./README/flags/il.png) Hebrew
