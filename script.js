@@ -245,7 +245,12 @@ const smallStyle =
         oneKeystroke = /[a-z]/g;
         twoKeystrokes = /[A-Zăâîșț]/g; // Should be one
         break;
-
+                
+      case 'russian':
+        oneKeystroke = /[явертыуиопшщэючасдфгхйклзьцжбнм\-]/g;
+        twoKeystrokes = /[ЮёЁъЪЧЯВЕРТЫУИОПШЩЭАСДФГХЙКЛЗЬЦЖБНМ]/g; // phonetic layout
+        break;
+                
       case 'serbian':
         oneKeystroke = /[a-zćčđšž]/g;
         twoKeystrokes = /[A-ZĆČĐŠŽ]/g;
