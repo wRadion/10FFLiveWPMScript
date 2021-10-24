@@ -69,7 +69,6 @@ A lot of languages are now supported by the script. Instead of writing the **sup
 - ![Kurdish](./README/flags/kurdish.png) Kurdish
 - ![MK](./README/flags/mk.png) Macedonian
 - ![AF](./README/flags/af.png) Pashto
-- ![RU](./README/flags/ru.png) Russian
 
 If you wish me to add keystrokes rules for these languages, feel free to create an issue or contact me on Discord.
 
