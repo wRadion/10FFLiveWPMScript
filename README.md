@@ -5,7 +5,7 @@ How to Setup Video : https://www.youtube.com/watch?v=u9ihTqpMX8E
 1. [Preview](#preview)
 2. [What are those numbers?](#what-are-those-numbers)
 3. [How to Install](#how-to-install)
-4. [Supported languages](#supported-languages)
+4. [Unsupported languages](#unsupported-languages)
 5. [Custom Stylish theme](#custom-stylish-theme)
 6. [Customization](#customization)
 7. [Auto-Update](#auto-update)
@@ -52,7 +52,7 @@ Copy & paste the content of the [script.js](./script.js) file, and save it
   ![Image](./README/2.png)
 </details>
 
-## Supported languages
+## Unsupported languages
 
 A lot of languages are now supported by the script. Instead of writing the **supported languages**, here are the **unsupported languages**:
 
