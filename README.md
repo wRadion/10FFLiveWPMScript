@@ -62,7 +62,6 @@ A lot of languages are now supported by the script. Instead of writing the **sup
 - ![BD](./README/flags/bd.png) Bengali
 - ![CN](./README/flags/cn.png) Chinese
 - ![GE](./README/flags/ge.png) Georgian
-- ![IL](./README/flags/il.png) Hebrew
 - ![IN](./README/flags/in.png) Hindi
 - ![JP](./README/flags/jp.png) Japanese
 - ![KR](./README/flags/kr.png) Korean
