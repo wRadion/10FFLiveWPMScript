@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      4.9
+// @version      4.10
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -186,6 +186,10 @@ const smallStyle =
         threeKeystrokes = /[ϊϋΐΰΆΉΊΏΌΎΈ]/g;
         fourKeystrokes = /[ΪΫ]/g;
         break;
+
+      case 'hebrew':
+         oneKeystroke = /[אבגדהוזחטיכלמנסעפצקרשת]/g;
+         break;
 
       case 'hungarian':
         oneKeystroke = /[a-záéíóöőúüű]/g;
