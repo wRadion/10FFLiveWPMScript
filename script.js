@@ -107,6 +107,11 @@ const smallStyle =
         twoKeystrokes = /[A-ZÇË]/g;
         break;
 
+      case 'armenian':
+        oneKeystroke = /աբգդեևզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆ/g;
+        twoKeystrokes = /ԷԿ/g;
+        break;
+
       case 'azerbaijani':
         oneKeystroke = /[a-zçəğıöşü]/g;
         twoKeystrokes = /[A-ZÇƏĞIİÖŞÜ]/g;
