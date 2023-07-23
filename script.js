@@ -108,8 +108,8 @@ const smallStyle =
         break;
 
       case 'armenian':
-        oneKeystroke = /աբգդեևզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆ/g;
-        twoKeystrokes = /ԷԿ/g;
+        oneKeystroke = /[աբգդեևզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆ]/g;
+        twoKeystrokes = /[ԷԿ]/g;
         break;
 
       case 'azerbaijani':
