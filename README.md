@@ -57,7 +57,6 @@ Copy & paste the content of the [script.js](./script.js) file, and save it
 A lot of languages are now supported by the script. Instead of writing the **supported languages**, here are the **unsupported languages**:
 
 **UNSUPPORTED LANGUAGES:**
-- ![Arabic](./README/flags/arabic.png) Arabic
 - ![BD](./README/flags/bd.png) Bengali
 - ![CN](./README/flags/cn.png) Chinese
 - ![GE](./README/flags/ge.png) Georgian
