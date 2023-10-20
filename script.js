@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      4.11
+// @version      4.12
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -109,8 +109,7 @@ const smallStyle =
 
       case 'arabic':
         oneKeystroke = /[ضصثقفغعهخحجدشسيبلاتنمكطئءؤرلاىةوزظلأ]/g;
-        twoKeystrokes = /[أإآلإلآ]/g;
-        threeKeystrokes = /[رّوّ]/g;
+        twoKeystrokes = /[إ]/g;
         break;
 
       case 'armenian':
@@ -333,7 +332,19 @@ const smallStyle =
     const four = (word.match(fourKeystrokes) || []).length * 4;
     const five = (word.match(fiveKeystrokes) || []).length * 5;
 
-    return one + two + three + four + five;
+    let extra = 0;
+    if (language === "arabic") {
+        for (const c of word) {
+            if (c === "أ" || c === "آ") {
+                extra += 1;
+            }
+            if (c === "رّ" || c === "وّ") {
+                extra += 2;
+            }
+        }
+    }
+
+    return one + two + three + four + five + extra;
   }
 
   function reset() {
