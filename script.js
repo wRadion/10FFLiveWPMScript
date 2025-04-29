@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         10FF Live WPM
 // @namespace    https://github.com/wRadion/10FFLiveWPMScript
-// @version      4.12
+// @version      4.13
 // @description  Live WPM for 10FF tests
 // @author       wRadion
 // @match        *://10fastfingers.com/typing-test/*
@@ -215,6 +215,12 @@ const smallStyle =
       case 'italian':
         oneKeystroke = /[a-zàèìòù]/g;
         twoKeystrokes = /[A-Zçé]/g;
+        break;
+
+      case 'korean':
+        twoKeystrokes = /[가개거고교구그기나내너녀누느니다대더데도두디라래러로르리마머모무바버보부사새서세소수시아야어여오우이자저제주지처크타트퍼하후히]/g;
+        threeKeystrokes = /[각간갖같것결경계곳과국굴금길께날남년놓눈님돈동되뒤든듣들등따때또람런렇령론롭른만말먹명몇몸못문물뭐받방번법살상생선성센속손술습신실싶쓰씨안알앞얼엇역예왜용운위육음의인일작잘잡장전점정좀좋중직집찾책친통특학한함화회]/g;
+        fourKeystrokes = /[관떤떻많뿐삶앉않없원읽있활]/g;
         break;
 
       case 'latvian':
