@@ -63,7 +63,6 @@ A lot of languages are now supported by the script. Instead of writing the **sup
 - ![IN](./README/flags/in.png) Hindi
 - ![JP](./README/flags/jp.png) Japanese
 - ![Kurdish](./README/flags/kurdish.png) Kurdish
-- ![MK](./README/flags/mk.png) Macedonian
 - ![AF](./README/flags/af.png) Pashto
 
 If you wish me to add keystrokes rules for these languages, feel free to create an issue or contact me on Discord.
