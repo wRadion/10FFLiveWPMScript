@@ -296,8 +296,7 @@ const smallStyle =
       case 'spanish':
         oneKeystroke = /[a-zñ]/g;
         twoKeystrokes = /[A-ZáéíóúÑ]/g;
-        threeKeystrokes = /[ÁÉÍÓÚü]/g;
-        fourKeystrokes = /[Ü]/g;
+        threeKeystrokes = /[ÁÉÍÓÚÜü]/g;
         break;
 
       case 'swedish':
