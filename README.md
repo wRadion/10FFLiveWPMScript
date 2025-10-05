@@ -21,12 +21,12 @@ All of these values are updated whenever you go to the next word (pressing space
 
 - The "_Speed_" value is your current speed (in WPM = Words Per Minute)
 - The "_Keystrokes_" values are the number of keystrokes you hit:
-  - In green, the correct keystrokes and in red, the wrong keystrokes
+  - The correct keystrokes are in green, and the incorrect keystrokes are in red.
   - On 10FF, when you typed a word wrong, all the keystrokes are considered wrong, even if you did just one mistake
 - The "_Words_" value is the number of words you typed:
-  - In green, the correct words and in red, the wrong words
+  - The correct words are in green, and the incorrect words are in red.
   - On 10FF, when you typed a word wrong, it is considered wrong even if you did just one mistake
-- The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can not be less than the score.
+- The "_Score_" value is your current score (in WPM). If you stop the test, the score will be your final result. Your final result can't be less than the score.
 
 ## How to Install
 
@@ -69,7 +69,7 @@ If you wish me to add keystrokes rules for these languages, feel free to create 
 
 ## Custom Stylish theme
 
-It supports [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) themes. The graphic appareance of the values displayed by the script will adapt depending on the style you use.
+It supports [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) themes. The graphic appearance of the values displayed by the script will change depending on the style you use.
 
 Here are some examples:
 
@@ -100,7 +100,7 @@ Here are some examples:
 
 ## Auto-Update
 
-With tampermonkey, you can input an URL to the file in order to update it automatically:
+With tampermonkey, you can input a URL to the file in order to update it automatically:
 
 ### 1.
 <details>
@@ -118,7 +118,7 @@ With tampermonkey, you can input an URL to the file in order to update it automa
 
 ### 3.
 <details>
-  <summary>On the <b>Updates</b> section, copy this URL in the textbox: <code>https://raw.githubusercontent.com/wRadion/10FFLiveWPMScript/master/script.js</code></summary>
+  <summary>In the <b>Updates</b> section, copy this URL and paste it in the textbox: <code>https://raw.githubusercontent.com/wRadion/10FFLiveWPMScript/master/script.js</code></summary>
 
   ![Image](./README/auto-update/1-3.png)
 </details>
